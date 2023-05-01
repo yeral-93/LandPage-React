@@ -1,11 +1,19 @@
 import React from 'react';
-import Main from '../main/Main'
+
+      
+
+import Header from '../header/Header';
+import GlobalStyles from './StyleApp';
+import Main from '../main/Main';
+
 const App = () => {
     return (
-        <>
-        <Main/>
+        <div>
+            <GlobalStyles />
+            <Header />
+             <Main/>
+        </div>
 
-        </>
     )
 }
 
