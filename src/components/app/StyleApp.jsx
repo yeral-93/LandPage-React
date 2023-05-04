@@ -15,5 +15,5 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Josefin Sans', sans-serif;
     }
-`
-export default GlobalStyles
+`;
+export default GlobalStyles;
