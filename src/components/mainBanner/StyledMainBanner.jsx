@@ -10,7 +10,7 @@ width:50% ;background-color: white;
 position: relative;
 top: -335px;
 left: 560px;
-padding: 80px 30px 40px 80px; 
+padding: 80px 30px 0px 80px; 
 `
 export const H1 = styled.h1` 
 font-size:50px;
