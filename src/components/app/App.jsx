@@ -1,12 +1,14 @@
 import React from 'react';
-import Header from '../header/Header';
+import Banner from "../banner/Banner";
+// import Header from '../header/Header';
 import GlobalStyles from './StyleApp';
 
 const App = () => {
     return (
         <div>
             <GlobalStyles />
-            <Header />
+        <Banner />
+            {/* <Header /> */}
         </div>
     )
 }

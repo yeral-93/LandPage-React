@@ -1,28 +1,50 @@
 import styled from "styled-components"
 
-export const StylesNav = styled.nav`
-    background-color: #24b26b;
+export const Nav = styled.nav`
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 35px 85px 10px 80px;
+    padding: 55px 85px 10px 85px;
     ul{
         display: flex;
-        gap: 20px;
+        gap: 26px;
         align-items: center;
     }
     li{
+        position: relative;
         font-size: 'Alata';
-        :hover{
-        color: #24b26b;
-        text-decoration: underline; 
+        color: var(--White);
+        cursor: pointer;
+        ::before{
+            content: "";
+            background-color: var(--White);
+            position: absolute;
+            left: 0.6rem;
+            bottom: -0.6rem;
+            align-items: center;
+            height: 2px;
+            width: 0;
+            transition: 0.3s ease-in-out;
+        }
+        :hover::before{
+            content: "";
+            background-color: var(--White);
+            position: absolute;
+            left: 0.6rem;
+            bottom: -0.6rem;
+            height: 3px;
+            width: 75%;
+        }
     }
+    @media screen and (max-width: 375px) {
+        display: none;
     }
 `
 export const Mobileicon = styled.figure`
     display: none;
 
-    @media screen and (max-width: 475px) {
+    @media screen and (max-width: 375px) {
         display: flex;
         align-items: center;
         cursor: pointer;
@@ -31,3 +53,9 @@ export const Mobileicon = styled.figure`
         }
     }
 `
+// @media screen and (max-width: 375px) {
+// display: grid;
+// justify-content: space-between;
+// align-items: center;
+// grid-template-columns: repeat(2, max-content);
+// }
