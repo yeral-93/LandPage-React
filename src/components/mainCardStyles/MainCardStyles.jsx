@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const SectionMainCards = styled.section`
 width: 100%;
-padding: 0px 85px 10px 85px;
+padding: 0px 85px 80px 85px;
 `;
 
 export const Information = styled.section`
