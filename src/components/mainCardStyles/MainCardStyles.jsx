@@ -11,7 +11,6 @@ display: flex;
 width: 97%;
 margin: 0 auto;
 justify-content: space-between;
-margin-top: 20px;
 margin-bottom: 50px;
 `;
 
