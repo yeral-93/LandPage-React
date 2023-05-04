@@ -3,9 +3,10 @@ import MainBanner from "../mainBanner/MainBanner";
 
 const Main = () => {
   return (
-    <div>
+    <>
     <MainBanner/>
-    </div>
+  
+    </>
   )
 }
 
