@@ -1,26 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
 import CardsSeccionUno from './CardsSeccionUno';
 import CardsSeccionDos from './CardsSeccionDos';
-
-
-const Information = styled.section`
-background-color: yellow;
-display: flex;
-width: 100%;
-justify-content: space-evenly;
-`;
+import { Information,TituloCreations, BotonSeeAll, SectionMainCards } from '../mainCardStyles/MainCardStyles';
 
 const MainCards = () => {
     return (
-        <section className='sectionMainCards'>
+        <SectionMainCards>
             <Information>
-                <p>OUR CREATIONS</p>
-                <button>SEE ALL</button>
+                <TituloCreations>OUR CREATIONS</TituloCreations>
+                <BotonSeeAll>SEE ALL</BotonSeeAll>
             </Information>
             <CardsSeccionUno />
             <CardsSeccionDos />
-        </section>
+        </SectionMainCards>
     )
 }
 
