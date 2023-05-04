@@ -1,12 +1,20 @@
-import React from 'react';
+
+import React from 'react'
+import MainBanner from "../mainBanner/MainBanner";
 import MainCards from '../mainCards/MainCards';
 
 const Main = () => {
-    return (
-   <div>
-    <MainCards/>
-   </div>
-    )
+  return (
+    <>
+    <MainBanner/>
+     <MainCards/>
+    </>
+  )
 }
+export default Main:
 
-export default Main;
+
+
+
+
+
