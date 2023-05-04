@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const StylesBanner = styled.div`
+width:100% ;
+height:100% ;
 padding: 70px 85px 0px 85px;
 `
 
