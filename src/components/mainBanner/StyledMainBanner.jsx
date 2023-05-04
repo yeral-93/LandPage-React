@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StylesBanner = styled.div`
 padding: 70px 85px 0px 85px;
-margin-bottom:120px ;
+margin-bottom:-257px ;
 `
 
 export const Informacion = styled.div`
