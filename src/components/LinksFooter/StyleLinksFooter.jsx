@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const LinkFooter = styled.section`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 30px;
   color: var(--White);
   margin: 20px 0px 0px 0px;
   font-weight: 600;
@@ -35,12 +35,25 @@ export const LinkFooter = styled.section`
     }
   }
 
-  p {
-    font-weight: 400;
+  @media screen and (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      font-size: 25px;
+      font-weight: 400;
+    }
   }
+`;
 
-  @media screen and (max-width: 375px){
-display: flex;
-flex-direction: column;
-}
+export const ImgFooter = styled.img`
+  width: 165px;
+  height: auto;
+
+  @media screen and (max-width: 375px) {
+    width: 200px;
+  }
 `;
