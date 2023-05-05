@@ -4,27 +4,40 @@ import DeepEarth from '../../img/desktop/image-deep-earth.jpg';
 import NightArcade from '../../img/desktop/image-night-arcade.jpg';
 import SoccerTeamVr from '../../img/desktop/image-soccer-team.jpg';
 import TheGrid from '../../img/desktop/image-grid.jpg';
-import { SectionCards, Card, TitleCard, DivHover} from '../mainCardStyles/CardSeccionStyles';
 
+import DeepEarthMobile from '../../img/mobile/image-deep-earth.jpg';
+import NightArcadeMobile from '../../img/mobile/image-night-arcade.jpg';
+import SoccerTeamVrMobile from '../../img/mobile/image-soccer-team.jpg';
+import TheGridMobile from '../../img/mobile/image-grid.jpg';
+
+import { SectionCards, Card, TitleCard, DivHover, ImgDestok, ImgMobile} from '../mainCardStyles/CardSeccionStyles';
 
 const CardsSeccionUno = () => {
 
     const InformationCards = [
         {
             image: DeepEarth,
-            name: "DEEP EARTH",
+            imageMobile: DeepEarthMobile,
+            name1: "DEEP",
+            name2: "EARTH",
         },
         {
             image: NightArcade,
-            name: "NIGHT ARCADE",
+            imageMobile: NightArcadeMobile,
+            name1: "NIGHT",
+            name2: "ARCADE",
         },
         {
             image: SoccerTeamVr,
-            name: "SOCCER TEAM VR",
+            imageMobile: SoccerTeamVrMobile,
+            name1: "SOCCER",
+            name2: "TEAM VR",
         },
         {
             image: TheGrid,
-            name: "THE GRID",
+            imageMobile: TheGridMobile,
+            name1: "THE",
+            name2: "GRID",
         }
     ]
 
@@ -34,10 +47,11 @@ const CardsSeccionUno = () => {
                         <>
                         <DivHover>
                         <figure>
-                        <img src={item.image} alt={item.name} />
+                        <ImgDestok src={item.image} alt={item.name} className='cardDestok'/>
+                        <ImgMobile src={item.imageMobile} alt={item.name} className='cardMobile'/>
                         </figure>
                         <Card>
-                        <TitleCard>{item.name}</TitleCard>
+                        <TitleCard>{item.name1}<br></br>{item.name2}</TitleCard>
                         </Card>
                         </DivHover>
                         </>
