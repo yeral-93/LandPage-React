@@ -3,26 +3,40 @@ import FromUpAbove from '../../img/desktop/image-from-above.jpg';
 import PocketBorealis from '../../img/desktop/image-pocket-borealis.jpg';
 import TheCuriosity from '../../img/desktop/image-curiosity.jpg';
 import MakeItFisheye from '../../img/desktop/image-fisheye.jpg';
-import { SectionCards, Card, TitleCard, DivHover } from '../mainCardStyles/CardSeccionStyles'
+
+import FromUpAboveMobile from '../../img/mobile/image-from-above.jpg';
+import PocketBorealisMobile from '../../img/mobile/image-pocket-borealis.jpg';
+import TheCuriosityMobile from '../../img/mobile/image-curiosity.jpg';
+import MakeItFisheyeMobile from '../../img/mobile/image-fisheye.jpg';
+
+import { SectionCards, CardTwo, TitleCard, DivHover, ImgDestok, ImgMobileTwo } from '../mainCardStyles/CardSeccionStyles'
 
 const CardsSeccionDos = () => {
 
     const InformationCards = [
         {
             image: FromUpAbove,
-            name: "FROM UP ABOVE VR",
+            imageMobile: FromUpAboveMobile,
+            name1: "FROM UP",
+            name2: "ABOVE VR",
         },
         {
             image: PocketBorealis,
-            name: "POCKET BOREALIS",
+            imageMobile: PocketBorealisMobile,
+            name1: "POCKET",
+            name2: "BOREALIS",
         },
         {
             image: TheCuriosity,
-            name: "THE CURIOSITY",
+            imageMobile: TheCuriosityMobile,
+            name1: "THE",
+            name2: "CURIOSITY",
         },
         {
             image: MakeItFisheye,
-            name: "MAKE IT FISHEYE",
+            imageMobile: MakeItFisheyeMobile,
+            name1: "MAKE IT",
+            name2: "FISHEYE",
         }
     ]
 
@@ -32,11 +46,12 @@ const CardsSeccionDos = () => {
                         <>
                         <DivHover>
                         <figure>
-                        <img src={item.image} alt={item.name} />
+                        <ImgDestok src={item.image} alt={item.name} />
+                        <ImgMobileTwo src={item.imageMobile} alt={item.name} />
                         </figure>
-                        <Card>
-                        <TitleCard>{item.name}</TitleCard>
-                        </Card>
+                        <CardTwo>
+                        <TitleCard>{item.name1}<br></br>{item.name2}</TitleCard>
+                        </CardTwo>
                         </DivHover>
                         </>
                     ))}
