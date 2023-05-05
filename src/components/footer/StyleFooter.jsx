@@ -10,7 +10,7 @@ export const FooterGlobal = styled.div`
     flex-direction: column;
     gap: 40px;
     width: 100%;
-    padding: 60px 0px 100px 0px;
+    padding: 60px 0px 70px 0px;
 
     p {
       font-size: 20px;
