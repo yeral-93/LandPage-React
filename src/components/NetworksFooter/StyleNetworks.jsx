@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const Networks = styled.section`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 30px;
 
   ul {
     display: flex;
@@ -33,13 +35,15 @@ export const Networks = styled.section`
       transform-origin: bottom center;
     }
   }
-`;
-export const ImgFooter = styled.img`
-  width: 165px;
-  height: auto;
+  p {
+    color: var(--White);
+    font-weight: 400;
+  }
 
   @media screen and (max-width: 375px){
 display: flex;
-flex-direction: column;;
+flex-direction: column;
+align-items: center;
 }
 `;
+

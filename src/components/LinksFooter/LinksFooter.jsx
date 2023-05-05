@@ -1,5 +1,7 @@
 import React from "react";
-import { LinkFooter } from "./StyleLinksFooter";
+import { ImgFooter, LinkFooter } from "./StyleLinksFooter";
+import LogoFooter from "../../img/logo.svg";
+
 const LinksFooter = () => {
   const linksFooter = [
     {
@@ -25,12 +27,14 @@ const LinksFooter = () => {
   ];
   return (
     <LinkFooter>
+    <figure>
+        <ImgFooter src={LogoFooter} alt="Logo" />
+      </figure>
       <ul>
         {linksFooter.map((item, index) => (
           <li key={`${item.name}-${item.index}`}>{item.name}</li>
         ))}
       </ul>
-      <p>© 2021 Loopstudios. All rights reserved.</p>
     </LinkFooter>
   );
 };
