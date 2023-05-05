@@ -6,8 +6,8 @@ import { FooterGlobal } from "./StyleFooter";
 const Footer = () => {
   return (
     <FooterGlobal>
-      <NetworksFooter />
       <LinksFooter />
+      <NetworksFooter />
     </FooterGlobal>
   );
 };
