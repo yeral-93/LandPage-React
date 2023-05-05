@@ -1,14 +1,15 @@
 import React from 'react';
 import Banner from "../banner/Banner";
-// import Header from '../header/Header';
 import GlobalStyles from './StyleApp';
+import Footer from '../footer/Footer';
 
 const App = () => {
     return (
         <div>
             <GlobalStyles />
         <Banner />
-            {/* <Header /> */}
+            <Header />
+            <Footer/>
         </div>
     )
 }
