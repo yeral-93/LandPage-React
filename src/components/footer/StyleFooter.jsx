@@ -9,7 +9,7 @@ export const FooterGlobal = styled.div`
   @media screen and (max-width: 375px) {
     flex-direction: column;
     gap: 40px;
-    width: 100%;
+    width: 437px;
     padding: 60px 0px 70px 0px;
 
     p {
