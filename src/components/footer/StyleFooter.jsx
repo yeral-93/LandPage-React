@@ -13,7 +13,7 @@ export const FooterGlobal = styled.div`
     padding: 60px 0px 100px 0px;
 
     p {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
 `;
