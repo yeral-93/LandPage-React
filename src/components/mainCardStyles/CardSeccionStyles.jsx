@@ -28,7 +28,7 @@ display: none;
     width: 350px;
     margin-bottom: 5px;
     display: block;
-    transform: translateX(-72px);
+    transform: translateX(-70px);
 }
 `;
 
@@ -39,7 +39,7 @@ display: none;
     margin-bottom: 25px;
     display: block;
     margin-top: -20px;
-    transform: translateX(-72px);
+    transform: translateX(-70px);
 }
 `;
 
@@ -71,7 +71,7 @@ color: black;
 @media screen and (max-width: 375px){
     width: 350px;
     height: 130px;
-    transform: translateX(-72px);
+    transform: translateX(-70px);
     background: linear-gradient(to right, black, 30%, transparent);
 }
 `;
@@ -97,7 +97,7 @@ color: black;
 @media screen and (max-width: 375px){
     width: 350px;
     height: 130px;
-    transform: translate(-72px, -20px);
+    transform: translate(-70px, -20px);
     background: linear-gradient(to right, black, 30%, transparent);
 }
 `;
