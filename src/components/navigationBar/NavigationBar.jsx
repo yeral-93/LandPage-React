@@ -1,7 +1,11 @@
 import React from "react";
 import logo from '../../img/logo.svg'
 import menu from '../../img/icon-hamburger.svg'
-import { Mobileicon, Nav } from "./styleNavigationBar";
+import close from '../../img/icon-close.svg'
+
+import { Container, Nav, StyleLinks, Hamburguer, Close } from "./styleNavigationBar";
+
+// import { Mobileicon, Nav } from "./styleNavigationBar";
 
 const NavigationBar = () => {
     const links = [
@@ -29,21 +33,39 @@ const NavigationBar = () => {
 
   return (
     <>
-      <Nav>
+    <Container>
+      <Nav id="nav">
         <figure>
           <img src={ logo } alt="logo" />
         </figure>
 
-        <Mobileicon>
-          <img src={ menu } alt="logo" />
-        </Mobileicon>
+        <StyleLinks>
+          {links.map((item, index) => (
+              <li key={`${item.name}-${index}`}>{item.name}</li>
+            ))}
+        </StyleLinks>
+        
+        <Hamburguer href="#nav"><img src={ menu } alt="menu" /></Hamburguer>
+        <Close href="#"><img src={ close } alt="close" /></Close>
+      </Nav>
+    </Container>
+    
+
+      {/* <Nav>
+        <figure>
+          <img src={ logo } alt="logo" />
+        </figure>
+
         <ul>
         {links.map((item, index) => (
             <li key={`${item.name}-${index}`}>{item.name}</li>
           ))}
         </ul>
         
-      </Nav>
+        <Mobileicon>
+          <img src={ menu } alt="logo" />
+        </Mobileicon>
+      </Nav> */}
     </>
   );
 };
