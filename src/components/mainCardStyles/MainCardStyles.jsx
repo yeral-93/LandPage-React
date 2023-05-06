@@ -28,16 +28,16 @@ font-weight: bold;
 width: 400px;
 
 @media screen and (max-width: 375px){
-    font-size: 24px;
-    text-aling: center;
-    transform: translate(6px, 30px);
+    font-size: 20px;
+    transform: translate(20px, 30px);
     margin-bottom: 45px;
+    margin-top: 30px;
 }
 `;
 
 export const BotonSeeAll = styled.button`
-background-color: white;
-border: 2px solid black;
+background-color: var(--White);
+border: 2px solid var(--Black);
 cursor: pointer;
 padding: 7px 30px 7px 30px;
 border-radius: 3px;
@@ -47,12 +47,12 @@ color: black;
 letter-spacing: 3px;
 
 &:hover{
-    background-color: black;
-    color: white;
+    background-color: var(--Black);
+    color: var(--White);
 }
 
 @media screen and (max-width: 375px){
     position: absolute;
-    transform: translate(40px, 1180px)
+    transform: translate(40px, 1200px);
 }
 `;

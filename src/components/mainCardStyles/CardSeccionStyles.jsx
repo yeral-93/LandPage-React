@@ -50,8 +50,11 @@ display: flex;
 justify-content: space-between;
 margin: 0 auto;
 @media screen and (max-width: 375px){
-    width: 500px;
+    width: 280px;
     left: -80px;
+    display: flex;
+    flex-direction: column;
+
 }
 `;
 
@@ -120,6 +123,5 @@ font-weight: 600;
     font-size: 25px;
     line-height: 30px;
     width: 150px;
-    background-color: green;
 }
 `;
