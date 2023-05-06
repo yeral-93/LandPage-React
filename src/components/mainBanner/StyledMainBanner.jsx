@@ -22,7 +22,7 @@ img {
 background:url(${HombreMobile}) ;
   width:350px;
   padding:0 ;
-  margin-left:-100px ;
+  margin-left: -95px;
   background-color:red ;
 }
  
