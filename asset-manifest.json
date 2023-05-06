@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/LandPage-React/static/js/main.f0619202.js",
+    "main.js": "/LandPage-React/static/js/main.1074f3e0.js",
     "static/media/image-hero.jpg": "/LandPage-React/static/media/image-hero.9b5aacead42e955824d3.jpg",
     "static/media/image-from-above.jpg": "/LandPage-React/static/media/image-from-above.f316f3f3afc353415f71.jpg",
     "static/media/image-interactive.jpg": "/LandPage-React/static/media/image-interactive.d6a3949b27bb7a0c79c6.jpg",
@@ -19,9 +19,9 @@
     "static/media/icon-facebook.svg": "/LandPage-React/static/media/icon-facebook.e9773e52bc64ea377cb95af7ccb6877e.svg",
     "static/media/icon-close.svg": "/LandPage-React/static/media/icon-close.bbbbb0069bb8a015e77966ccb00bf3cd.svg",
     "static/media/icon-hamburger.svg": "/LandPage-React/static/media/icon-hamburger.5153cb809501d4309c231954bc0f9ec2.svg",
-    "main.f0619202.js.map": "/LandPage-React/static/js/main.f0619202.js.map"
+    "main.1074f3e0.js.map": "/LandPage-React/static/js/main.1074f3e0.js.map"
   },
   "entrypoints": [
-    "static/js/main.f0619202.js"
+    "static/js/main.1074f3e0.js"
   ]
 }
