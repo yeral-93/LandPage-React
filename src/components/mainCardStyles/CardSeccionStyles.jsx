@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const SectionCards = styled.section`
 display: flex;
-aling-items: center;
 width: 100%;
 margin: 0 auto;
 justify-content: space-between;
@@ -15,6 +14,9 @@ margin-bottom: 20px;
     width: 100%;
 }
 `;
+
+
+
 
 export const ImgDestok = styled.img`
 @media screen and (max-width: 375px){
@@ -47,7 +49,13 @@ export const DivHover = styled.div`
 display: flex;
 justify-content: space-between;
 margin: 0 auto;
-aling-items: center;
+@media screen and (max-width: 375px){
+    width: 280px;
+    left: -80px;
+    display: flex;
+    flex-direction: column;
+
+}
 `;
 
 export const Card = styled.div`
@@ -115,6 +123,5 @@ font-weight: 600;
     font-size: 25px;
     line-height: 30px;
     width: 150px;
-    background-color: green;
 }
 `;
