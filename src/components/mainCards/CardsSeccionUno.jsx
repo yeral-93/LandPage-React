@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import DeepEarth from '../../img/desktop/image-deep-earth.jpg';
 import NightArcade from '../../img/desktop/image-night-arcade.jpg';
 import SoccerTeamVr from '../../img/desktop/image-soccer-team.jpg';
