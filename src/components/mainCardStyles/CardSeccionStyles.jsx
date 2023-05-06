@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const SectionCards = styled.section`
 display: flex;
-aling-items: center;
 width: 100%;
 margin: 0 auto;
 justify-content: space-between;
@@ -15,6 +14,9 @@ margin-bottom: 20px;
     width: 100%;
 }
 `;
+
+
+
 
 export const ImgDestok = styled.img`
 @media screen and (max-width: 375px){
@@ -47,7 +49,10 @@ export const DivHover = styled.div`
 display: flex;
 justify-content: space-between;
 margin: 0 auto;
-aling-items: center;
+@media screen and (max-width: 375px){
+    width: 500px;
+    left: -80px;
+}
 `;
 
 export const Card = styled.div`
