@@ -45,8 +45,8 @@ const CardsSeccionDos = () => {
                     {InformationCards.map((item, index2) => (
                         <>
                         <DivHover>
-                        <ImgDestok src={item.image} alt={item.name2} />
-                        <ImgMobileTwo src={item.imageMobile} alt={item.name2} />
+                        <ImgDestok key={`${item.name2}-${index2}`} src={item.image} alt={item.name2} />
+                        <ImgMobileTwo key={`${item.name2}-${index2}`} src={item.imageMobile} alt={item.name2} />
                         <CardTwo>
                         <TitleCard>{item.name1}<br></br>{item.name2}</TitleCard>
                         </CardTwo>
