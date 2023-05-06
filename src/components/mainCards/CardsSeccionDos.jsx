@@ -42,7 +42,7 @@ const CardsSeccionDos = () => {
 
     return (
         <SectionCards>
-                    {InformationCards.map((item) => (
+                    {InformationCards.map((item, index2) => (
                         <>
                         <DivHover>
                         <ImgDestok src={item.image} alt={item.name2} />

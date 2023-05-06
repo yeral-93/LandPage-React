@@ -43,12 +43,12 @@ const CardsSeccionUno = () => {
 
     return (
         <SectionCards>
-                    {InformationCards.map((item) => (
+                    {InformationCards.map((item, index) => (
                         <>
                         <DivHover>
                         <figure>
-                        <ImgDestok src={item.image} alt={item.name} className='cardDestok'/>
-                        <ImgMobile src={item.imageMobile} alt={item.name} className='cardMobile'/>
+                        <ImgDestok key={`${item.name2}-${index}`} src={item.image} alt={item.name} className='cardDestok'/>
+                        <ImgMobile key={`${item.name2}-${index}`} src={item.imageMobile} alt={item.name} className='cardMobile'/>
                         </figure>
                         <Card>
                         <TitleCard>{item.name1}<br></br>{item.name2}</TitleCard>
